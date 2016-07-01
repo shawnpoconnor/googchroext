@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)https://developer.chrome.com/extensions/examples/tutorials/getstarted/popup.html -->
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+</head>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  </head>
+  <body>
+    <div id="parent">
+      <h1 id='hi'>HI</h1>
+    </div>
+
+    <img src="https://pbs.twimg.com/profile_images/703711024315310080/GaNm9qfS.jpg">
+    <form id='word_form'>
+      <input type='string' name="word" placeholder='word'>
+      <input type='submit' value='CLICK ME'>
+    </form>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
